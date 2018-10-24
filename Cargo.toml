@@ -1,0 +1,18 @@
+[package]
+name = "fis-falsch"
+version = "0.1.0"
+authors = ["Martin Giger <martin@humanoids.be>"]
+
+[dependencies]
+actix = "0.7"
+actix-web = { version = "0.7", features=["rust-tls"] }
+futures = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+csv = "1.0"
+bytes = "0.4.8"
+rustls = "0.14.0"
+
+[[bin]]
+name = "fis-falsch-server"
+path = "src/server/main.rs"

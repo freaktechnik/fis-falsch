@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "fis-falsch",
+  "productName": "Fis falsch",
+  "description": "Report wrong FIS behavior",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npm run build && cargo run",
+    "build": "poi build",
+    "report": "poi build --bundle-report",
+    "serve": "cargo run"
+  },
+  "author": {
+    "name": "Martin Giger",
+    "email": "martin@humanoids.be"
+  },
+  "dependencies": {
+    "offline-plugin": "^4.8.0",
+    "normalize.css": "^7.0.0",
+    "object-assign": "^4.1.1",
+    "promise-polyfill": "^6.0.2"
+  },
+  "devDependencies": {
+    "poi": "^9.0.0",
+    "poi-preset-bundle-report": "^2.0.0",
+    "serve": "^6.1.0",
+    "poi-preset-offline": "^9.0.0"
+  }
+}
